@@ -122,7 +122,7 @@ export default function Home() {
             <section className="relative rounded-lg overflow-hidden shadow-lg">
               <div className="relative h-[500px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&h=600&fit=crop" 
+                  src="/images/imagem-para-banner-principal.jpg" 
                   alt="Fútbol chileno" 
                   className="w-full h-full object-cover"
                 />
@@ -202,16 +202,11 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="flex justify-center lg:justify-end">
-                  <div className="relative">
-                    <div className="bg-gray-800 rounded-lg p-4 shadow-2xl">
-                      <div className="bg-gray-900 rounded border-4 border-gray-700 w-full max-w-sm h-64 flex items-center justify-center">
-                        <div className="text-center">
-                          <Smartphone className="w-16 h-16 mx-auto mb-4 text-[#DC2626]" />
-                          <p className="text-sm text-gray-400">Vista previa de la plataforma</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <img 
+                    src="/images/imagme-para-ficar-na-demonstração-da-plataforma.png" 
+                    alt="Vista previa de la plataforma" 
+                    className="max-w-full h-auto"
+                  />
                 </div>
               </div>
             </section>
