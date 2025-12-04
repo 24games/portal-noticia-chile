@@ -1,38 +1,13 @@
 'use client'
 
-import { Search, User, TrendingUp, Users, Zap, BarChart3, Smartphone, Trophy } from 'lucide-react'
+import { TrendingUp, Users, Zap, BarChart3, Smartphone, Trophy } from 'lucide-react'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F3F4F6]">
-      {/* Header */}
-      <header className="w-full bg-black text-white">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex items-center">
-              <h1 className="text-2xl font-bold">
-                DEPORTES<span className="text-[#DC2626]">24</span>
-              </h1>
-            </div>
-
-            {/* Menu */}
-            <nav className="hidden md:flex items-center space-x-6">
-              <a href="#" className="hover:text-[#DC2626] transition-colors">Futbol</a>
-              <a href="#" className="hover:text-[#DC2626] transition-colors">Resultados</a>
-              <a href="#" className="hover:text-[#DC2626] transition-colors">Competiciones</a>
-              <a href="#" className="hover:text-[#DC2626] transition-colors">Tendencias</a>
-              <a href="#" className="hover:text-[#DC2626] transition-colors">Comunidad</a>
-            </nav>
-
-            {/* Right Icons */}
-            <div className="flex items-center space-x-4">
-              <Search className="w-5 h-5 cursor-pointer hover:text-[#DC2626] transition-colors" />
-              <User className="w-5 h-5 cursor-pointer hover:text-[#DC2626] transition-colors" />
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Main Grid Layout */}
       <div className="container mx-auto px-4 py-8">
@@ -240,19 +215,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-black text-white mt-12">
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center">
-            <h3 className="text-xl font-bold mb-2">
-              DEPORTES<span className="text-[#DC2626]">24</span>
-            </h3>
-            <p className="text-gray-400 text-sm">
-              © 2025 Deportes24. Todos los derechos reservados.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
